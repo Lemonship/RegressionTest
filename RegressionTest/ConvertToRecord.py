@@ -50,7 +50,7 @@ def convert_to(data_set, name):
   cols = images.shape[2]
   depth = images.shape[3]
 
-  filename = os.path.join(FLAGS.directory, name + '.tfrecords')
+  filename = os.path.join(FLAGS.directory, name + '.tfrecord')
   print('Writing', filename)
   writer = tf.python_io.TFRecordWriter(filename)
   for index in range(num_examples):
